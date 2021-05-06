@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Trivia</string>
+    <string name="FINAL_SCORE">finalScore</string>
+    <string name="START_TIME">startTime</string>
+    <string name="END_TIME">endTime</string>
+    <string name="MY_PREFS">my_prefs</string>
+    <string name="IS_ADMIN">is_admin</string>
+    <string name="DIFFICULTY">difficulty</string>
+    <string name="CURRENT_USER">current_user</string>
+    <string name="USERS_NAME_ARRAY">users_name_array</string>
+    <string name="USERS_EMAIL_ARRAY">users_email_array</string>
+</resources>

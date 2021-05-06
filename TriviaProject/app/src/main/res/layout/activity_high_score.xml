@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backrounddd"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".HighScoreActivity">
+
+    <TextView
+        android:id="@+id/highScoreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="50dp"
+        android:text="Top 10"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="@android:color/background_light"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/aclonica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="376dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@mipmap/queblack_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/highScoreTextView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Num"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Score"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+            <TextView
+                android:id="@+id/score1"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="0"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Num"
+                android:text="2"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+            <TextView
+                android:id="@+id/score2"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                app:fontFamily="@font/aclonica" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Num"
+                android:text="3"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+            <TextView
+                android:id="@+id/score3"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                app:fontFamily="@font/aclonica" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Num"
+                android:text="4"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+            <TextView
+                android:id="@+id/score4"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                app:fontFamily="@font/aclonica" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Num"
+                android:text="5"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+            <TextView
+                android:id="@+id/score5"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="0"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Num"
+                android:text="6"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+            <TextView
+                android:id="@+id/score6"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="0"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Num"
+                android:text="7"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+            <TextView
+                android:id="@+id/score7"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="0"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Num"
+
+                android:text="8"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+            <TextView
+                android:id="@+id/score8"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                app:fontFamily="@font/aclonica" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Num"
+                android:text="9"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+            <TextView
+                android:id="@+id/score9"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                app:fontFamily="@font/aclonica" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Num"
+                android:text="10"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+            <TextView
+                android:id="@+id/score10"
+                android:layout_width="120dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="0"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/aclonica" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/backhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn1"
+        android:fontFamily="@font/aclonica"
+        android:onClick="homepage"
+        android:text="Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
